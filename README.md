@@ -1,4 +1,4 @@
-# .NET Repository Template
+# Inquizitiv
 This is a template repository for C#/.NET projects.
 ## License
 This repository is licensed with the [MIT](LICENSE.txt) license.
