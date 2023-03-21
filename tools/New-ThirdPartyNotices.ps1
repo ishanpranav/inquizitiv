@@ -22,6 +22,18 @@ function Out-ThirdPartyNotices {
     Out-File -FilePath $path -InputObject $value -Append
 }
 
+function Out-GitIgnore() {
+    param ($value)
+
+    Out-File -FilePath $gitIgnorePath -InputObject $value -Append
+}
+
+function Out-GitAttributes() {
+    param ($value)
+
+    Out-File -FilePath $gitAttributesPath -InputObject $value -Append
+}
+
 function Convert-MarkdownString {
     param ($value)
 
@@ -31,16 +43,7 @@ function Convert-MarkdownString {
 $hashtable = @{}
 
 function Out-Dependencies {
-    param (
-        $dependencies,
-        $description
-    )
-
-    if ($dependencies.Count -eq 0) {
-        return;
-    }
-
-    Out-ThirdPartyNotices $description
+    param ($dependencies)
 
     foreach ($dependency in $dependencies) {
         if ($null -eq $dependency.index) {
@@ -92,21 +95,19 @@ function Out-Dependencies {
 
             if ($hashtable.ContainsKey($dependency.license)) {
                 $license = $hashtable[$dependency.license]
-            }
-            else {
+            } else {
                 $licensePath = Get-LicensePath $dependency.license
 
                 if (Test-Path $licensePath) {
                     $license = @{
                         title = Get-Content $licensePath | Select-Object -First 1
-                        text  = Join-String -Separator "`n" -InputObject (Get-Content $licensePath | Select-Object -Skip 1)
+                        text = Join-String -Separator "`n" -InputObject (Get-Content $licensePath | Select-Object -Skip 1)
                     }
-                }
-                else {
+                } else {
                     $licenseReference = $json.licenses[$dependency.license]
                     $license = @{
                         title = $licenseReference.title
-                        text  = (Invoke-WebRequest -Uri $licenseReference.url).Content
+                        text = (Invoke-WebRequest -Uri $licenseReference.url).Content
                     }
                 }
 
@@ -135,34 +136,39 @@ $json = Get-Content -Path "../docs/licenses.json" -Raw | ConvertFrom-Json -AsHas
 
 Out-ThirdPartyNotices "Third-Party Notices
 ===================
+Oligopoly by Ishan Pranav
+
+Copyright (c) 2023 Ishan Pranav
+
+Oligopoly was created for research purposes and is inspired by the classic
+MONOPOLY board game. It takes heavy inspiration from open-source MONOPOLY
+implementations and is not intended for commercial use. This is free software.
+For more details, please see the [license](LICENSE.txt).
+
 This software uses third-party libraries or other resources that may be
 distributed under licenses different than the software.
 
 The attached notices are provided for informational purposes only. Please
 create a new GitHub issue if a required notice is missing. 
 
-For more details, please see the [license](LICENSE.txt)."
-
-Out-Dependencies $json.dependencies "
 Dependencies
 ------------
 This section contains notices for binary dependencies redistributed alongside
 the application."
-
-Out-Dependencies $json.references "
-References
+Out-Dependencies $json.dependencies
+Out-ThirdPartyNotices "References
 ----------
 This section contains references to parts of the source code based on or
 inspired by third-party open-source software."
-
-Out-Dependencies $json.tools "
-Resources
+Out-Dependencies $json.references
+Out-ThirdPartyNotices "Resources
 ---------
 This section contains attributions for helpful resources that assisted in the
 development of this software. These elements may be included in the source
 repository but are not redistributed with release versions of the application."
-
-Out-ThirdPartyNotices "--------"
+Out-Dependencies $json.tools
+Out-ThirdPartyNotices "Licenses
+--------"
 
 foreach ($key in $hashtable.Keys | Sort-Object) {
     $license = $hashtable[$key]
