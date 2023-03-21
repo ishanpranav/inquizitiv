@@ -2,6 +2,8 @@
 # Source: https://github.com/github/gitignore/blob/master/VisualStudio.gitignore
 # License: Creative Commons Zero v1.0 Universal
 
+src/Inquizitiv/build/
+
 # User-specific files
 *.rsuser
 *.suo
@@ -26,7 +28,6 @@ x86/
 [Aa][Rr][Mm]/
 [Aa][Rr][Mm]64/
 bld/
-build/
 [Bb]in/
 [Oo]bj/
 [Ll]og/
