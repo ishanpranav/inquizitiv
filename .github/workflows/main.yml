@@ -18,7 +18,8 @@ jobs:
       uses: actions/setup-node@v3
       with:
         node-version: 18.x
-      run: cd src/Inquizitiv
+
+    - run: cd src/Inquizitiv
 
     - name: Publish Node.js Project
       run: npm run build
