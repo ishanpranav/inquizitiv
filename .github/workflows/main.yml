@@ -20,7 +20,7 @@ jobs:
         node-version: 18.x
 
     - name: Publish Node.js Project
-      run: npm install; cd src/Inquizitiv; npm run build
+      run: cd inquizitiv/inquizitiv/src/Inquizitiv; npm install; npm run build
       
     - name: Commit build to GitHub Pages
       uses: JamesIves/github-pages-deploy-action@v4
