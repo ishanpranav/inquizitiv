@@ -27,4 +27,4 @@ jobs:
       with:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         BRANCH: publish
-        FOLDER: build
+        FOLDER: src/Inquizitiv/build/
