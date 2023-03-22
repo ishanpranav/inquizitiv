@@ -1,4 +1,4 @@
-import { collection, doc, limit, query, serverTimestamp, setDoc } from "firebase/firestore";
+import { collection, doc, limit, orderBy, query, serverTimestamp, setDoc } from "firebase/firestore";
 import { useState } from "react";
 import { useCollectionData } from "react-firebase-hooks/firestore";
 import { auth, firestore } from "./firebase-config.js";
@@ -16,17 +16,13 @@ const messageConverter = {
     },
     fromFirestore: (snapshot, options) => {
         const data = snapshot.data(options);
-        const result = new Message(data.value, data.uid, data.imageUrl);
-
-        result.id = data.id;
-
-        return result;
+        return new Message(data.id, data.value, data.uid, data.imageUrl, data.created);
     }
 };
 
 function ChatRoom() {
     const messageCollection = collection(firestore, "messages").withConverter(messageConverter);
-    const [messages] = useCollectionData(query(messageCollection, limit(25)));
+    const [messages] = useCollectionData(query(messageCollection, orderBy("created"), limit(25)));
     const [formValue, setFormValue] = useState("");
 
     const onTextInputChange = (e) => {
@@ -37,8 +33,9 @@ function ChatRoom() {
         e.preventDefault();
 
         const { uid, photoURL } = auth.currentUser;
+        var document = doc(messageCollection);
 
-        await setDoc(doc(messageCollection), new Message(formValue, uid, photoURL));
+        await setDoc(document, new Message(document.id, formValue, uid, photoURL));
 
         setFormValue("");
     };
@@ -46,20 +43,23 @@ function ChatRoom() {
     return <>
         <div>{messages && messages.map(x => <ChatMessage key={x.id} message={x} />)}</div>
         <form onSubmit={onFormSubmitAsync}>
-            <input value={formValue} onChange={onTextInputChange} />
-            <button type="submit">Send</button>
+            <div className="input-group mb-3">
+                <input value={formValue} type="text" className="form-control" placeholder="Write something..." onChange={onTextInputChange} aria-label="Message" aria-describedby="button-addon2" />
+                <button className="btn btn-outline-primary" type="submit" id="button-addon2">Send</button>
+            </div>
         </form>
     </>;
 }
 
 function ChatMessage(props) {
     const { value, uid, imageUrl } = props.message;
-    const messageClass = uid === auth.currentUser.uid ? 'sent' : 'received';
-
+    const messageClass = uid === auth.currentUser.uid ? 'card border-primary mb-3' : 'card mb-3';
     return (
-        <div className={`message-${messageClass}`}>
-            <img src={imageUrl} title="Profile" alt="The sender." width={32} height={32} />
-            <p>{value}</p>
+        <div className={messageClass}>
+            <div class="card-header">
+                <span><img src={imageUrl} className="img-fluid rounded" title="Profile" alt="The sender." width={32} height={32} /></span>&nbsp;
+                <span>{value}</span>
+            </div>
         </div>
     );
 }
