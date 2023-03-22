@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/inquizitiv/static/css/main.bfabf1b5.css",
-    "main.js": "/inquizitiv/static/js/main.a1f81300.js",
+    "main.css": "/inquizitiv/static/css/main.d45405e0.css",
+    "main.js": "/inquizitiv/static/js/main.dcbfddd4.js",
     "index.html": "/inquizitiv/index.html",
-    "main.bfabf1b5.css.map": "/inquizitiv/static/css/main.bfabf1b5.css.map",
-    "main.a1f81300.js.map": "/inquizitiv/static/js/main.a1f81300.js.map"
+    "main.d45405e0.css.map": "/inquizitiv/static/css/main.d45405e0.css.map",
+    "main.dcbfddd4.js.map": "/inquizitiv/static/js/main.dcbfddd4.js.map"
   },
   "entrypoints": [
-    "static/css/main.bfabf1b5.css",
-    "static/js/main.a1f81300.js"
+    "static/css/main.d45405e0.css",
+    "static/js/main.dcbfddd4.js"
   ]
 }
