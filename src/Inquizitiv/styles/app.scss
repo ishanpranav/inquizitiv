@@ -1,1 +1,10 @@
 @import "bootstrap/scss/bootstrap.scss";
+
+.message-sent {
+    background-color: green;
+    color: white;
+}
+
+.message-received {
+    background-color: gray;
+}
