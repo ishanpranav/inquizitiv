@@ -41,12 +41,47 @@
   "tools": [
     {
       "title": "Angular CLI",
-      "formats": ["typescript"],
+      "formats": [
+        "typescript"
+      ],
       "source": "https://github.com/angular/angular-cli",
       "author": "Google, Inc.",
       "copyright": "2017 Google, Inc.",
       "license": "mit_google-2017",
       "index": "Google, Inc."
+    },
+    {
+      "title": "GitHub Pages Deploy Action",
+      "formats": [
+        "typescript"
+      ],
+      "source": "https://github.com/JamesIves/github-pages-deploy-action",
+      "copyright": "2021 James Ives",
+      "author": "James Ives",
+      "license": "mit_ives",
+      "index": "Ives, James"
+    },
+    {
+      "title": "Checkout V3",
+      "formats": [
+        "typescript"
+      ],
+      "source": "https://github.com/actions/checkout",
+      "copyright": "2018 GitHub, Inc. and contributors",
+      "author": "GitHub, Inc. and contributors",
+      "license": "mit_github",
+      "index": "GitHub, Inc."
+    },
+    {
+      "title": "setup-node",
+      "formats": [
+        "typescript"
+      ],
+      "source": "https://github.com/actions/setup-node",
+      "copyright": "2018 GitHub, Inc. and contributors",
+      "author": "GitHub, Inc. and contributors",
+      "license": "mit_github",
+      "index": "GitHub, Inc."
     }
   ]
 }

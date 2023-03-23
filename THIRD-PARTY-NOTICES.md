@@ -43,10 +43,25 @@ This section contains attributions for helpful resources that assisted in the
 development of this software. These elements may be included in the source
 repository but are not redistributed with release versions of the application.
 
+### Checkout V3&emsp;<sub><sup>*typescript*&ensp;</sup></sub>
+- Author: GitHub, Inc. and contributors
+- Source: [actions/checkout](https://github.com/actions/checkout)
+- License: [MIT](#mit_github)
+
+### setup-node&emsp;<sub><sup>*typescript*&ensp;</sup></sub>
+- Author: GitHub, Inc. and contributors
+- Source: [actions/setup-node](https://github.com/actions/setup-node)
+- License: [MIT](#mit_github)
+
 ### Angular CLI&emsp;<sub><sup>*typescript*&ensp;</sup></sub>
 - Author: Google, Inc.
 - Source: [angular/angular-cli](https://github.com/angular/angular-cli)
 - License: [MIT](#mit_google-2017)
+
+### GitHub Pages Deploy Action&emsp;<sub><sup>*typescript*&ensp;</sup></sub>
+- Author: James Ives
+- Source: [JamesIves/github-pages-deploy-action](https://github.com/JamesIves/github-pages-deploy-action)
+- License: [MIT](#mit_ives)
 
 Licenses
 --------
@@ -467,6 +482,33 @@ ________________________________________________________________________________
 ```
 ________________________________________________________________________________
 
+### <a id='mit_github'>MIT</a>
+
+```
+The MIT License (MIT)
+
+Copyright 2018 GitHub, Inc. and contributors
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the “Software”), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+```
+________________________________________________________________________________
+
 ### <a id='mit_google-2010-2022'>MIT</a>
 
 ```
@@ -500,6 +542,33 @@ ________________________________________________________________________________
 The MIT License (MIT)
 
 Copyright 2017 Google, Inc.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the “Software”), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+```
+________________________________________________________________________________
+
+### <a id='mit_ives'>MIT</a>
+
+```
+The MIT License (MIT)
+
+Copyright 2021 James Ives
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the “Software”), to deal

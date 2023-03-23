@@ -1,0 +1,30 @@
+# name: Deploy to GitHub Pages
+
+# on:
+#   push:
+#     branches:
+#       - master
+
+# permissions:
+#   contents: write
+
+# jobs:
+#   deploy-to-github-pages:
+#     runs-on: ubuntu-latest
+#     steps:
+#     - uses: actions/checkout@v3
+    
+#     - name: Setup Node.js
+#       uses: actions/setup-node@v3
+#       with:
+#         node-version: 18.x
+
+#     - name: Publish Node.js Project
+#       run: npm install; npm run build
+      
+#     - name: Commit build to GitHub Pages
+#       uses: JamesIves/github-pages-deploy-action@v4
+#       with:
+#         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+#         BRANCH: publish
+#         FOLDER: build/
