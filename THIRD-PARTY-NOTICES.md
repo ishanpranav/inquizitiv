@@ -547,7 +547,6 @@ ________________________________________________________________________________
 ```
 The MIT License (MIT)
 
-Copyright 2011-2022 Twitter, Inc.
 Copyright (c) 2011-2023 The Bootstrap Authors
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -575,7 +574,7 @@ ________________________________________________________________________________
 ```
 The MIT License (MIT)
 
-Copyright 2018 GitHub, Inc. and contributors
+Copyright (c) 2018 GitHub, Inc. and contributors
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the “Software”), to deal
@@ -602,7 +601,7 @@ ________________________________________________________________________________
 ```
 The MIT License (MIT)
 
-Copyright Copyright (c) 2010-2022 Google LLC. https://angular.io/license
+Copyright (c) 2010-2022 Google LLC. https://angular.io/license
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the “Software”), to deal
@@ -629,7 +628,7 @@ ________________________________________________________________________________
 ```
 The MIT License (MIT)
 
-Copyright 2014-2016 Google, Inc. http://angular.io
+Copyright (c) 2014-2016 Google, Inc. http://angular.io
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the “Software”), to deal
@@ -656,7 +655,7 @@ ________________________________________________________________________________
 ```
 The MIT License (MIT)
 
-Copyright 2017 Google, Inc.
+Copyright (c) 2017 Google, Inc.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the “Software”), to deal
@@ -683,7 +682,7 @@ ________________________________________________________________________________
 ```
 The MIT License (MIT)
 
-Copyright 2021 James Ives
+Copyright (c) 2021 James Ives
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the “Software”), to deal
@@ -710,7 +709,7 @@ ________________________________________________________________________________
 ```
 The MIT License (MIT)
 
-Copyright 2021 Floating UI contributors
+Copyright (c) 2021 Floating UI contributors
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the “Software”), to deal

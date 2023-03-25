@@ -14,7 +14,7 @@
       ],
       "source": "https://github.com/angular/angular",
       "author": "Google, Inc.",
-      "copyright": "Copyright (c) 2010-2022 Google LLC. https://angular.io/license",
+      "copyright": "2010-2022 Google LLC. https://angular.io/license",
       "license": "mit_google-2010-2022",
       "index": "Google, Inc."
     },
@@ -51,7 +51,7 @@
         "css"
       ],
       "source": "https://github.com/twbs/bootstrap",
-      "copyright": "2011-2022 Twitter, Inc.\nCopyright (c) 2011-2023 The Bootstrap Authors",
+      "copyright": "2011-2023 The Bootstrap Authors",
       "author": "Twitter, Inc., and Bootstrap authors",
       "license": "mit_bootstrap",
       "index": "Twitter, Inc., et al."
