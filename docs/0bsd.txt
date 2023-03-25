@@ -1,4 +1,4 @@
-BSD Zero Clause License
+Zero-Clause BSD
 Copyright (c) {0}
 
 Permission to use, copy, modify, and/or distribute this software for any

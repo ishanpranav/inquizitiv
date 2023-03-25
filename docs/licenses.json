@@ -1,5 +1,10 @@
 {
-  "licenses": {},
+  "licenses": {
+    "mit-google-2008": {
+      "title": "Apache license 2.0 and BSD 3-clause \"New\" or \"Revised\" license",
+      "url": "https://raw.githubusercontent.com/firebase/firebase-js-sdk/master/LICENSE"
+    }
+  },
   "dependencies": [
     {
       "title": "Angular",
@@ -59,7 +64,7 @@
       "source": "https://github.com/microsoft/tslib",
       "copyright": "Microsoft Corporation.",
       "author": "Microsoft Corporation",
-      "license": "bsd0_microsoft",
+      "license": "0bsd_microsoft",
       "index": "Microsoft Corporation"
     },
     {
@@ -73,6 +78,42 @@
       "author": "Floating UI contributors",
       "license": "mit_popper",
       "index": "Floating UI contributors"
+    },
+    {
+      "title": "AngularFire",
+      "formats": [
+        "typescript",
+        "javascript"
+      ],
+      "source": "https://github.com/angular/angularfire",
+      "copyright": "2014-2016 Google, Inc. http://angular.io",
+      "author": "Google, Inc.",
+      "license": "mit_google-2014-2016",
+      "index": "Google, Inc."
+    },
+    {
+      "title": "Firebase JavaScript SDK",
+      "formats": [
+        "typescript",
+        "javascript"
+      ],
+      "source": "https://github.com/firebase/firebase-js-sdk",
+      "copyright": "2008 Google Inc.  All rights reserved.",
+      "author": "Google, Inc.",
+      "license": "mit-google-2008",
+      "index": "Google, Inc."
+    },
+    {
+      "title": "IndexedDB with usability",
+      "formats": [
+        "typescript",
+        "javascript"
+      ],
+      "source": "https://github.com/jakearchibald/idb",
+      "copyright": "2016, Jake Archibald <jaffathecake@gmail.com>",
+      "author": "Jake Archibald",
+      "license": "isc_archibald",
+      "index": "Archibald, Jake"
     }
   ],
   "references": [],
