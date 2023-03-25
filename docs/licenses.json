@@ -1,87 +1,112 @@
 {
-  "licenses": {},
-  "dependencies": [
-    {
-      "title": "Angular",
-      "formats": [
-        "typescript",
-        "javascript"
-      ],
-      "source": "https://github.com/angular/angular",
-      "author": "Google, Inc.",
-      "copyright": "Copyright (c) 2010-2022 Google LLC. https://angular.io/license",
-      "license": "mit_google-2010-2022",
-      "index": "Google, Inc."
-    },
-    {
-      "title": "Reactive Extensions for JavaScript",
-      "formats": [
-        "typescript"
-      ],
-      "source": "https://github.com/ReactiveX/rxjs",
-      "author": "Google, Inc., Netflix, Inc., Microsoft Corporation, and contributors",
-      "copyright": "2015-2018 Google, Inc., Netflix, Inc., Microsoft Corp. and contributors",
-      "license": "apache-2.0_google-netflix-microsoft",
-      "index": "Google, Inc., et al."
-    },
-    {
-      "title": "TypeScript",
-      "formats": [
-        "typescript"
-      ],
-      "source": "https://github.com/microsoft/TypeScript",
-      "copyright": "Microsoft Corporation",
-      "notices": "https://github.com/microsoft/TypeScript/blob/main/ThirdPartyNoticeText.txt",
-      "author": "Microsoft Corporation",
-      "license": "apache-2.0_microsoft",
-      "index": "Microsoft Corporation"
-    }
-  ],
-  "references": [],
-  "tools": [
-    {
-      "title": "Angular CLI",
-      "formats": [
-        "typescript"
-      ],
-      "source": "https://github.com/angular/angular-cli",
-      "author": "Google, Inc.",
-      "copyright": "2017 Google, Inc.",
-      "license": "mit_google-2017",
-      "index": "Google, Inc."
-    },
-    {
-      "title": "GitHub Pages Deploy Action",
-      "formats": [
-        "typescript"
-      ],
-      "source": "https://github.com/JamesIves/github-pages-deploy-action",
-      "copyright": "2021 James Ives",
-      "author": "James Ives",
-      "license": "mit_ives",
-      "index": "Ives, James"
-    },
-    {
-      "title": "Checkout V3",
-      "formats": [
-        "typescript"
-      ],
-      "source": "https://github.com/actions/checkout",
-      "copyright": "2018 GitHub, Inc. and contributors",
-      "author": "GitHub, Inc. and contributors",
-      "license": "mit_github",
-      "index": "GitHub, Inc."
-    },
-    {
-      "title": "setup-node",
-      "formats": [
-        "typescript"
-      ],
-      "source": "https://github.com/actions/setup-node",
-      "copyright": "2018 GitHub, Inc. and contributors",
-      "author": "GitHub, Inc. and contributors",
-      "license": "mit_github",
-      "index": "GitHub, Inc."
-    }
-  ]
+    "licenses": {},
+    "dependencies": [
+        {
+            "title": "Angular",
+            "formats": [
+                "typescript",
+                "javascript"
+            ],
+            "source": "https://github.com/angular/angular",
+            "author": "Google, Inc.",
+            "copyright": "Copyright (c) 2010-2022 Google LLC. https://angular.io/license",
+            "license": "mit_google-2010-2022",
+            "index": "Google, Inc."
+        },
+        {
+            "title": "Reactive Extensions for JavaScript",
+            "formats": [
+                "typescript"
+            ],
+            "source": "https://github.com/ReactiveX/rxjs",
+            "author": "Google, Inc., Netflix, Inc., Microsoft Corporation, and contributors",
+            "copyright": "2015-2018 Google, Inc., Netflix, Inc., Microsoft Corp. and contributors",
+            "license": "apache-2.0_google-netflix-microsoft",
+            "index": "Google, Inc., et al."
+        },
+        {
+            "title": "TypeScript",
+            "formats": [
+                "typescript"
+            ],
+            "source": "https://github.com/microsoft/TypeScript",
+            "copyright": "Microsoft Corporation",
+            "notices": "https://github.com/microsoft/TypeScript/blob/main/ThirdPartyNoticeText.txt",
+            "author": "Microsoft Corporation",
+            "license": "apache-2.0_microsoft",
+            "index": "Microsoft Corporation"
+        },
+        {
+            "title": "Bootstrap",
+            "formats": [
+                "javascript",
+                "html",
+                "scss",
+                "css"
+            ],
+            "source": "https://github.com/twbs/bootstrap",
+            "copyright": "2011-2022 Twitter, Inc.\nCopyright (c) 2011-2023 The Bootstrap Authors",
+            "author": "Twitter, Inc., and Bootstrap Authors",
+            "license": "mit_bootstrap",
+            "index": "Twitter"
+        },
+        {
+            "title": "tslib",
+            "formats": [
+                "typescript"
+            ],
+            "source": "https://github.com/microsoft/tslib",
+            "copyright": "Microsoft Corporation.",
+            "author": "Microsoft Corporation",
+            "license": "bsd0_microsoft",
+            "index": "Microsoft Corporation"
+        }
+    ],
+    "references": [],
+    "tools": [
+        {
+            "title": "Angular CLI",
+            "formats": [
+                "typescript"
+            ],
+            "source": "https://github.com/angular/angular-cli",
+            "author": "Google, Inc.",
+            "copyright": "2017 Google, Inc.",
+            "license": "mit_google-2017",
+            "index": "Google, Inc."
+        },
+        {
+            "title": "GitHub Pages Deploy Action",
+            "formats": [
+                "typescript"
+            ],
+            "source": "https://github.com/JamesIves/github-pages-deploy-action",
+            "copyright": "2021 James Ives",
+            "author": "James Ives",
+            "license": "mit_ives",
+            "index": "Ives, James"
+        },
+        {
+            "title": "Checkout V3",
+            "formats": [
+                "typescript"
+            ],
+            "source": "https://github.com/actions/checkout",
+            "copyright": "2018 GitHub, Inc. and contributors",
+            "author": "GitHub, Inc. and contributors",
+            "license": "mit_github",
+            "index": "GitHub, Inc."
+        },
+        {
+            "title": "setup-node",
+            "formats": [
+                "typescript"
+            ],
+            "source": "https://github.com/actions/setup-node",
+            "copyright": "2018 GitHub, Inc. and contributors",
+            "author": "GitHub, Inc. and contributors",
+            "license": "mit_github",
+            "index": "GitHub, Inc."
+        }
+    ]
 }
