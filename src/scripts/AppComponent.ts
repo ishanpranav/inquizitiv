@@ -8,8 +8,4 @@ import { Component } from "@angular/core";
 })
 export class AppComponent {
     title = "Inquizitiv";
-
-    onCollapseClick() {
-        document.querySelector('.offcanvas-collapse')?.classList.toggle('open');
-    }
 }

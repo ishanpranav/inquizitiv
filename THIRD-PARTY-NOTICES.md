@@ -15,12 +15,17 @@ Dependencies
 This section contains notices for binary dependencies redistributed alongside
 the application.
 
+### Floating UI&emsp;<sub><sup>*typescript*&ensp;*javascript*&ensp;</sup></sub>
+- Author: Floating UI contributors
+- Source: [floating-ui/floating-ui](https://github.com/floating-ui/floating-ui)
+- License: [MIT](#mit_popper)
+
 ### Angular&emsp;<sub><sup>*typescript*&ensp;*javascript*&ensp;</sup></sub>
 - Author: Google, Inc.
 - Source: [angular/angular](https://github.com/angular/angular)
 - License: [MIT](#mit_google-2010-2022)
 
-### Reactive Extensions for JavaScript&emsp;<sub><sup>*typescript*&ensp;</sup></sub>
+### Reactive Extensions for JavaScript&emsp;<sub><sup>*typescript*&ensp;*javascript*&ensp;</sup></sub>
 - Author: Google, Inc., Netflix, Inc., Microsoft Corporation, and contributors
 - Source: [ReactiveX/rxjs](https://github.com/ReactiveX/rxjs)
 - License: [Apache license 2.0](#apache-2.0_google-netflix-microsoft)
@@ -38,7 +43,7 @@ For more information about this software, please see its [third-party notices](h
 - License: [BSD Zero Clause License](#bsd0_microsoft)
 
 ### Bootstrap&emsp;<sub><sup>*javascript*&ensp;*html*&ensp;*scss*&ensp;*css*&ensp;</sup></sub>
-- Author: Twitter, Inc., and Bootstrap Authors
+- Author: Twitter, Inc., and Bootstrap authors
 - Source: [twbs/bootstrap](https://github.com/twbs/bootstrap)
 - License: [MIT](#mit_bootstrap)
 
@@ -625,6 +630,33 @@ ________________________________________________________________________________
 The MIT License (MIT)
 
 Copyright 2021 James Ives
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the “Software”), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+```
+________________________________________________________________________________
+
+### <a id='mit_popper'>MIT</a>
+
+```
+The MIT License (MIT)
+
+Copyright 2021 Floating UI contributors
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the “Software”), to deal
