@@ -1,9 +1,8 @@
 {
-  "apiKey": "AIzaSyD3pwhMvIdXNyK92Mt2QyUj2_3x2407jmY",
-  "authDomain": "fireship-demos.firebaseapp.com",
-  "databaseURL": "https://fireship-demos.firebaseio.com",
-  "projectId": "fireship-demos",
-  "storageBucket": "fireship-demos.appspot.com",
-  "messagingSenderId": "454289704797",
-  "appId": "1:454289704797:web:c8cc62c1d4e70487940ab4"
+  "apiKey": "AIzaSyDAEot7Sj1sP7fZh8NelsKSvGYakQ1jyrc",
+  "authDomain": "inquizitiv-2ca1f.firebaseapp.com",
+  "projectId": "inquizitiv-2ca1f",
+  "storageBucket": "inquizitiv-2ca1f.appspot.com",
+  "messagingSenderId": "53634781396",
+  "appId": "1:53634781396:web:21d1fe449438c8245eab41"
 }
