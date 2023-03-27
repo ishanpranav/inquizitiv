@@ -1,4 +1,4 @@
-<header class="p-3 mb-3 border-bottom bg-body fixed-top">
+<header class="p-3 mb-3 border-bottom bg-body">
   <div class="container">
     <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
       <a href="#" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-secondary text-decoration-none">
@@ -47,7 +47,7 @@
           <ul class="dropdown-menu dropdown-menu-end text-small">
             <li *ngFor="let signInMethod of signInMethods;">
               <a class="dropdown-item" href="#" (click)="onSignInButtonClick(signInMethod)">
-                <span class="bi-{{ signInMethod.iconId }} inquizitiv-icon"></span>
+                <span class="bi-{{ signInMethod.iconId }} inquizitiv-icon fs-5"></span>
                 Continue with {{signInMethod.displayName}}
               </a>
             </li>
@@ -196,7 +196,8 @@
           <div class="modal-body">You are about to delete your account and remove associated data. This action
             is not reversable. You will be asked to sign in again to confirm.</div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-danger" (click)="onDeleteProfileClick()" data-bs-dismiss="modal">Yes, delete my
+            <button type="button" class="btn btn-danger" (click)="onDeleteProfileClick()" data-bs-dismiss="modal">Yes,
+              delete my
               account</button>
             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
           </div>
@@ -206,8 +207,70 @@
   </div>
 </main>
 <div class="b-example-divider"></div>
-<footer class="py-2 bg-body">
-  <div class="d-flex justify-content-between py-4 my-4 border-top container">
-    <p>&copy; 2023 Ishan Pranav. All rights reserved.</p>
+<footer class="py-5 bg-body">
+  <div class="container">
+    <div class="row">
+      <div class="col-2">
+        <h5>Section</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+        </ul>
+      </div>
+
+      <div class="col-2">
+        <h5>Section</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+        </ul>
+      </div>
+
+      <div class="col-2">
+        <h5>Section</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+        </ul>
+      </div>
+
+      <div class="col-4 offset-1">
+        <form>
+          <h5>Subscribe to our newsletter</h5>
+          <p>Monthly digest of whats new and exciting from us.</p>
+          <div class="d-flex w-100 gap-2">
+            <label for="newsletter1" class="visually-hidden">Email address</label>
+            <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+            <button class="btn btn-primary" type="button">Subscribe</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="d-flex justify-content-between py-4 my-4 border-top">
+      <p>&copy; 2023 Ishan Pranav. All rights reserved.</p>
+      <ul class="list-unstyled d-flex">
+        <li class="ms-3">
+          <a class="link-dark" href="https://github.com/ishanpranav/inquizitiv" target="_blank">
+            <span class="bi-github fs-3"></span>
+          </a>
+        </li>
+        <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24">
+              <use xlink:href="#instagram" />
+            </svg></a></li>
+        <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24">
+              <use xlink:href="#facebook" />
+            </svg></a></li>
+      </ul>
+    </div>
   </div>
 </footer>

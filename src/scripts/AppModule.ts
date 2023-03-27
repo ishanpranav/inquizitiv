@@ -5,7 +5,7 @@ import { getFirestore, provideFirestore } from "@angular/fire/firestore";
 import { FormsModule } from "@angular/forms";
 import { BrowserModule } from "@angular/platform-browser";
 import { AppComponent } from "./AppComponent";
-import * as firebase from "../../firebase.json"
+import * as firebase from "../data/firebase.json";
 import { DatabaseService } from "./DatabaseService";
 
 @NgModule({
