@@ -4,11 +4,9 @@
       <a href="#" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-secondary text-decoration-none">
         <span class="fs-4">Inquizitiv</span>
       </a>
-      <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-        <li><a href="#" class="nav-link px-2 link-secondary">Home</a></li>
-        <li><a href="#" class="nav-link px-2 link-body-emphasis">Inventory</a></li>
-        <li><a href="#" class="nav-link px-2 link-body-emphasis">Customers</a></li>
-        <li><a href="#" class="nav-link px-2 link-body-emphasis">Products</a></li>
+      <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content mb-md-0">
+        <li><a href="https://github.com/ishanpranav" class="nav-link px-2y link-body-emphasis">Home</a></li>
+        <li><a href="#" class="nav-link px-2 link-secondary">Inquizitiv</a></li>
       </ul>
       <ng-container *ngIf="auth?.currentUser">
         <div class="dropdown text-end">
@@ -63,11 +61,11 @@
     <svg class="bd-placeholder-img flex-shrink-0 me-2 rounded" width="48" height="48" xmlns="http://www.w3.org/2000/svg"
       role="img" aria-label="Placeholder: 48x48" preserveAspectRatio="xMidYMid slice" focusable="false">
       <title>Placeholder</title>
-      <rect width="100%" height="100%" fill="#cccccc" /><text x="50%" y="50%" fill="#cccccc" dy=".3em">32x32</text>
+      <rect width="100%" height="100%" fill="#eeeeee" /><text x="50%" y="50%" fill="#eeeeee" dy=".3em">32x32</text>
     </svg>
     <div class="lh-1">
       <h1 class="h6 mb-0 text-white lh-1">Inquizitiv</h1>
-      <small>Since 2023</small>
+      <small>Test your knowledge</small>
     </div>
   </div>
   <div class="my-3 p-3 bg-body rounded shadow-sm">
@@ -79,10 +77,12 @@
         <title>Placeholder</title>
         <rect width="100%" height="100%" fill="#007bff" /><text x="50%" y="50%" fill="#007bff" dy=".3em">32x32</text>
       </svg>
-      <p class="pb-3 mb-0 small lh-sm border-bottom">
-        <strong class="d-block text-gray-dark">@usernmae</strong>
-        Some representative placeholder content, with some information about this user. Imagine this being
-        some sort of status update, perhaps?
+      <p class="w-100 pb-3 mb-0 small lh-sm border-bottom">
+        <strong class="d-block text-gray-dark">
+          <span class="d-block placeholder col-1 mb-1"></span>
+        </strong>
+        <span class="d-block placeholder col-12 mb-1"></span>
+        <span class="d-block placeholder col-7"></span>
       </p>
     </div>
     <div class="d-flex text-body-secondary pt-3">
@@ -92,10 +92,11 @@
         <title>Placeholder</title>
         <rect width="100%" height="100%" fill="#e83e8c" /><text x="50%" y="50%" fill="#e83e8c" dy=".3em">32x32</text>
       </svg>
-      <p class="pb-3 mb-0 small lh-sm border-bottom">
-        <strong class="d-block text-gray-dark">@username</strong>
-        Some more representative placeholder content, related to this other user. Another status update,
-        perhaps.
+      <p class="w-100 pb-3 mb-0 small lh-sm border-bottom">
+        <strong class="d-block text-gray-dark">
+          <span class="d-block placeholder col-1 mb-1"></span>
+        </strong>
+        <span class="d-block placeholder col-9"></span>
       </p>
     </div>
     <div class="d-flex text-body-secondary pt-3">
@@ -105,14 +106,16 @@
         <title>Placeholder</title>
         <rect width="100%" height="100%" fill="#6f42c1" /><text x="50%" y="50%" fill="#6f42c1" dy=".3em">32x32</text>
       </svg>
-      <p class="pb-3 mb-0 small lh-sm border-bottom">
-        <strong class="d-block text-gray-dark">@username</strong>
-        This user also gets some representative placeholder content. Maybe they did something interesting,
-        and you really want to highlight this in the recent updates.
+      <p class="w-100 pb-3 mb-0 small lh-sm border-bottom">
+        <strong class="d-block text-gray-dark">
+          <span class="d-block placeholder col-1 mb-1"></span>
+        </strong>
+        <span class="d-block placeholder col-12 mb-1"></span>
+        <span class="d-block placeholder col-2"></span>
       </p>
     </div>
     <small class="d-block text-end mt-3">
-      <a href="#">All updates</a>
+      <a href="#" class="text-decoration-none">All updates</a>
     </small>
   </div>
   <div class="my-3 p-3 bg-body rounded shadow-sm">
@@ -146,9 +149,6 @@
           <div class="modal-body">
             ...
           </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Something else</button>
-          </div>
         </div>
       </div>
     </div>
@@ -162,14 +162,16 @@
           <form (ngSubmit)="onProfileFormSubmit()">
             <div class="modal-body">
               <div class="mb-3">
-                <label for="usernameTextInput" class="form-label">Username</label>
                 <div class="input-group">
-                  <span class="input-group-text" id="basic-addon3">@</span>
-                  <input type="text" class="form-control" id="usernameTextInput"
-                    aria-describedby="basic-addon3 basic-addon4" *ngIf="formProfile" [(ngModel)]="formProfile.username"
-                    name="username" />
+                  <span class="input-group-text">@</span>
+                  <div class="form-floating">
+                    <input type="text" class="form-control" id="usernameTextInput"
+                      aria-describedby="basic-addon3 basic-addon4" *ngIf="formProfile"
+                      [(ngModel)]="formProfile.username" name="username" placeholder="@example" />
+                    <label for="usernameTextInput">Username</label>
+                  </div>
                 </div>
-                <div class="form-text" id="basic-addon4">This is your public handle.</div>
+                <div class="form-text" id="basic-addon4">This is your public-facing handle.</div>
               </div>
               <hr />
               <div class="d-grid gap-2">
@@ -210,52 +212,52 @@
 <footer class="py-5 bg-body">
   <div class="container">
     <div class="row">
-      <div class="col-2">
-        <h5>Section</h5>
-        <ul class="nav flex-column">
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
-        </ul>
-      </div>
-
-      <div class="col-2">
-        <h5>Section</h5>
-        <ul class="nav flex-column">
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
-        </ul>
-      </div>
-
-      <div class="col-2">
-        <h5>Section</h5>
-        <ul class="nav flex-column">
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
-        </ul>
-      </div>
-
+      <ng-container *ngFor="let section of [1, 2, 3]">
+        <div class="col-2">
+          <h5>
+            <span class="d-block placeholder col-8"></span>
+          </h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">
+                <span class="d-block placeholder col-4"></span>
+              </a>
+            </li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">
+                <span class="d-block placeholder col-6"></span>
+              </a>
+            </li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">
+                <span class="d-block placeholder col-5"></span>
+              </a>
+            </li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">
+                <span class="d-block placeholder col-3"></span>
+              </a>
+            </li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">
+                <span class="d-block placeholder col-5"></span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </ng-container>
       <div class="col-4 offset-1">
         <form>
-          <h5>Subscribe to our newsletter</h5>
-          <p>Monthly digest of whats new and exciting from us.</p>
+          <h5>
+            <span class="d-block placeholder col-9"></span>
+          </h5>
+          <p>
+            <span class="d-block placeholder col-12 mb-1"></span>
+            <span class="d-block placeholder col-4"></span>
+          </p>
           <div class="d-flex w-100 gap-2">
             <label for="newsletter1" class="visually-hidden">Email address</label>
-            <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
-            <button class="btn btn-primary" type="button">Subscribe</button>
+            <input id="newsletter1" type="text" class="form-control placeholder" placeholder="Email address">
+            <button class="btn btn-primary disabled placeholder col-4" type="button"></button>
           </div>
         </form>
       </div>
     </div>
-
     <div class="d-flex justify-content-between py-4 my-4 border-top">
       <p>&copy; 2023 Ishan Pranav. All rights reserved.</p>
       <ul class="list-unstyled d-flex">
